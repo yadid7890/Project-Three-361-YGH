@@ -29,6 +29,9 @@ img {
   display: block;
   max-width: 100%;
 }
+/* code for figcaptions*/
+
+
 /* code for links */
 a {
   text-decoration: none;
@@ -114,7 +117,10 @@ footer {
 /*Code for resume sections---mayb flex*/
 
 
-/*Code for nav*/
+/*Code for education nav*/
+/*Code for education content*/
+
+/*Code for courses nav*/
 
 /*Code for courses content*/
 
