@@ -20,17 +20,53 @@ h1 {
   padding-left: 2%;
   text-shadow: 2px 2px black;
 }
-/* code for h1 */
+/* code for main color background */
 main {
-  background-color: lightsteelblue;
+  background: linear-gradient(142deg, #1f1e1e, #FFcccc 55%, #1f1e1e);
 }
 /* code for images */
 img {
   display: block;
   max-width: 100%;
 }
+/* code for links */
+a {
+  text-decoration: none;
+  color: white;
+}
 /*Code for main-nav in all pages*/
-
+#navigation {/*ul*/
+  display: flex;
+  flex-wrap: row wrap;
+  font-size: 1.2em;
+  background-image: url("../img/red-back.jpg");
+  background-repeat: repeat-x;
+}
+#main-nav li {
+  flex: 1 1 25%;
+}
+#main-nav a {/*nav element*/
+  background-color: #993333; /*blue*/
+  border: 1px solid #993333;
+  border-radius: 0.5em;
+  display: block;
+  padding: 0.65625em 0; /*10.5px/16px=.65625em    .65625em is for top and bottom, 0 is for left and right*/
+  text-align: center;
+  text-decoration: none;
+}
+#main-nav a:hover {
+  background: #663333;
+}
+nav a:active,
+#home #nav-hom,
+#resume #nav-res,
+#dogs #nav-dog,
+#courses #nav-cou,
+#about #nav-abo,
+#educ #nav-edu {
+  background: #663333;
+  color: white;
+}
 /*Code for gallery images in main page*/
 
 /*Code for back button*/
@@ -84,7 +120,7 @@ footer {
 
 /*Code for dogs slideshow*/
 .gallery .images {
-  background: lightsteelblue;
+  background: linear-gradient(142deg, #1f1e1e, #FFcccc 55%, #1f1e1e);
   display: flex;
   flex-flow: row wrap-reverse;
 }
