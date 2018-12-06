@@ -34,7 +34,7 @@ h2 {
 /* code for h3, only in resume*/
 h3 {
   background-color: #993333;
-  color: black;
+  color: ghostwhite;
   border-radius: 0.5em;
   padding-top: 2.5%;
   padding-bottom: 2.5%;
@@ -50,7 +50,6 @@ img {
   max-width: 100%;
 }
 /* code for figcaptions and most text*/
-figcaption,
 .images p {
   background-color: #993333;
   color: ghostwhite;
@@ -66,6 +65,9 @@ figcaption,
   line-height: 1.333em;
   border-radius: 0.5em;
   padding: 1%;
+}
+#photo-space-box p {
+  text-align: center;
 }
 /* code for links */
 a {
@@ -179,6 +181,12 @@ footer {
   background: #663333;
 }
 /*Code for resume sections---*/
+#work-experience ul {
+  margin-bottom: 2%;
+}
+#community ul {
+  margin-bottom: 2%;
+}
 #resume h2 {
   margin-top: 2.5%;
 }
@@ -224,7 +232,6 @@ footer {
   padding-left: 10%;
   font-size: 1.125em;
 }
-
 /*Code for education nav*/
 #edu-navigation {/*ul*/
   display: flex;
@@ -235,7 +242,7 @@ footer {
 }
 #edu-nav a {/*nav element*/
   background-color: #993333; /*blue*/
-  border: 1px solid #cc6699;
+  border: 3px solid #cc6699;
   border-radius: 0.5em;
   display: block;
   padding: 2.65625em 0; /*10.5px/16px=.65625em    .65625em is for top and bottom, 0 is for left and right*/
@@ -297,8 +304,14 @@ footer {
 .images p {
   text-align: center;
 }
-
-
+#dog-figcaption {
+  background-color: #FF9999;
+  color: black;
+  line-height: 1.333em;
+  border-radius: 0.5em;
+  padding: 1%;
+  text-align: center;
+}
 /*start media queries*/
 @media screen and (min-width: 500px) {/*--------------MEDIA QUERY-------------*/
 /*flex code for main navigation*/
