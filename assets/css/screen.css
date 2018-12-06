@@ -16,7 +16,7 @@ h1 {
   line-height: 1.30201em;
   padding-top: 10%;
   padding-bottom: 5%;
-  font-size: 2.25em;
+  font-size: 3.157em;
   padding-left: 2%;
   text-shadow: 2px 2px black;
 }
@@ -165,7 +165,6 @@ footer {
 }
 #resume-nav li {
   flex: 1 1 34%;
-  padding: .25%;
 }
 #resume-nav a {/*nav element*/
   background-color: #cc9999;
@@ -241,7 +240,7 @@ footer {
   flex: 1 1 100%;
 }
 #edu-nav a {/*nav element*/
-  background-color: #993333; /*blue*/
+  background-color: #993333;
   border: 3px solid #cc6699;
   border-radius: 0.5em;
   display: block;
@@ -254,7 +253,15 @@ footer {
   background: #663333;
 }
 /*Code for education content*/
-
+#photo-space-box figcaption,
+#iit-photo figcaption {
+  background-color: #993333;
+  color: ghostwhite;
+  line-height: 1.333em;
+  border-radius: 0.5em;
+  padding: 1%;
+  text-align: center;
+}
 /*Code for courses nav*/
 #course-list {/*ul*/
   display: flex;
@@ -328,6 +335,22 @@ footer {
 @media screen and (min-width: 600px) {/*--------------MEDIA QUERY-------------*/
 /*flex code for course navs*/
   #course-nav li {
+    flex: 1 1 32%;
+  }
+  main {
+  padding: 5%;
+  }
+  #back {
+    margin-top: 5%;
+  }
+  img {
+    max-width: 80%;
+    padding-left: 10%;
+  }
+  #course-nav li {
+    flex: 1 1 32%;
+  }
+  #resume-nav li {
     flex: 1 1 32%;
   }
 }
