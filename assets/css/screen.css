@@ -20,6 +20,16 @@ h1 {
   padding-left: 2%;
   text-shadow: 2px 2px black;
 }
+/* code for h2*/
+h2 {
+  background-color: #663333;
+  color: blanchedalmond;
+  line-height: 1.333em;
+  border-radius: 0.5em;
+  padding: 2.5%;
+  font-size: 1.125em;
+  margin-bottom: 2.5%;
+}
 /* code for main color background */
 main {
   background: linear-gradient(142deg, #1f1e1e, #FFcccc 55%, #1f1e1e);
