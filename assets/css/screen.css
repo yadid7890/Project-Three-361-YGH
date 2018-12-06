@@ -273,7 +273,10 @@ footer {
   }
 }
 @media screen and (min-width: 600px) {/*--------------MEDIA QUERY-------------*/
-
+/*flex code for course navs*/
+  #course-nav li {
+    flex: 1 1 32%;
+  }
 }
 @media screen and (min-width: 800px) {/*--------------MEDIA QUERY-------------*/
 /*flex code for about info*/
@@ -285,7 +288,7 @@ footer {
   #info section {
     flex: 0 1 33.33%;
   }
-  /*grid code for resume*/
+/*grid code for resume*/
   #main-content-resume {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -315,10 +318,61 @@ footer {
     grid-area: commu-grid;
   }
   /*grid code for courses info*/
+  #courses-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "com-box cs-box"
+    "econ-box hist-box"
+    "ipro-box itmd-box"
+    "math-box phil-box"
+    "ps-box psyc-box"
+    "soc-box ssci-box";
+  }
+  #com {
+  grid-area: com-box;
+  }
+  #cs {
+    grid-area: cs-box;
+  }
+  #econ {
+    grid-area: econ-box;
+  }
+  #hist {
+    grid-area: hist-box;
+  }
+  #ipro {
+    grid-area: ipro-box;
+  }
+  #itmd {
+    grid-area: itmd-box;
+  }
+  #math {
+    grid-area: math-box;
+  }
+  #phil {
+    grid-area: phil-box;
+  }
+  #ps {
+    grid-area: ps-box;
+  }
+  #psyc {
+    grid-area: psyc-box;
+  }
+  #soc {
+    grid-area: soc-box;
+  }
+  #ssci {
+    grid-area: ssci-box;
+  }
 
 }
-@media screen and (min-width: 1000px) {/*--------------MEDIA QUERY-------------*/
 
+@media screen and (min-width: 1000px) {/*--------------MEDIA QUERY-------------*/
+/*flex code for course navs*/
+  #course-nav li {
+    flex: 1 1 23%;
+  }
 }
 @media screen and (min-width: 1200px) {/*--------------MEDIA QUERY-------------*/
 
