@@ -441,19 +441,101 @@ footer {
   #ssci {
     grid-area: ssci-box;
   }
+  main {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+  img {
+    max-width: 60%;
+    padding-left: 20%;
+  }
+  footer {
+    padding-top: 2%;
+  }
+  #linked-in {
+    padding-left: 40%;
+  }
+  #github {
+    padding-left: 28%;
+  }
+  #email-icon {
+    padding-left: 15%;
+  }
+  #contact-info {
+    margin-top: 15%;
+    text-shadow: 3px 3px black;
+  }
+  #back {
+    margin-top: 3%;
+  }
 }
 @media screen and (min-width: 1000px) {/*--------------MEDIA QUERY-------------*/
 /*flex code for course navs*/
   #course-nav li {
     flex: 1 1 23%;
   }
+  figcaption {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  #course-nav li {
+    flex: 1 1 23%;
+  }
+  #resume-nav li {
+    flex: 1 1 23%;
+  }
+  #courses-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "com-box cs-box"
+    "econ-box hist-box"
+    "ipro-box itmd-box"
+    "math-box phil-box"
+    "ps-box psyc-box"
+    "soc-box ssci-box";
+  }
 }
 @media screen and (min-width: 1200px) {/*--------------MEDIA QUERY-------------*/
 
 }
 @media screen and (min-width: 1400px) {/*--------------MEDIA QUERY-------------*/
-
+  img {
+    max-width: 40%;
+    padding-left: 30%;
+  }
+  figcaption {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+  #main-nav a {/*nav element*/
+    padding: 1.5em 0.4em;; /*10.5px/16px=.65625em    .65625em is for top and bottom, 0 is for left and right*/
+  }
+  #back {
+    padding: 1.2em 1.6em;
+  }
+  #linked-in {
+    padding-left: 27%;
+  }
+  #github {
+    padding-left: 19%;
+  }
+  #email-icon {
+    padding-left: 10%;
+  }
+  #contact-info {
+    margin-top: 10%;
+  }
 }
 @media screen and (min-width: 1600px) {/*--------------MEDIA QUERY-------------*/
-
+  #courses-box {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "com-box cs-box econ-box"
+    "hist-box ipro-box itmd-box"
+    "math-box phil-box ps-box"
+    "psyc-box soc-box ssci-box";
+  }
 }
