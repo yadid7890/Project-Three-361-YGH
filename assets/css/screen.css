@@ -30,8 +30,14 @@ img {
   max-width: 100%;
 }
 /* code for figcaptions*/
-
-
+figcaption {
+  background-color: #993333;
+  color: white;
+  line-height: 1.333em;
+  border-radius: 0.5em;
+  padding: 1%;
+  text-align: center;
+}
 /* code for links */
 a {
   text-decoration: none;
@@ -69,10 +75,17 @@ nav a:active,
   background: #FF9999;
   color: black;
 }
-/*Code for gallery images in main page*/
-
 /*Code for back button*/
-
+#back {
+  background-color: #663333; /* BACKGROUND COLOR CODE */
+  border: 2px solid #FF9999;
+  border-radius: 0.5em;
+  font-size: 1em;
+  margin-left: 70%;
+  position: absolute;
+  padding: 0.4em 0.6em;
+  text-shadow: 1px 1px black;
+}
 /*Code for footer*/
 footer {
   background-image: url("../img/space-wall.jpg");
