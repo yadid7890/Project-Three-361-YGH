@@ -267,7 +267,22 @@ footer {
 
 }
 @media screen and (min-width: 800px) {/*--------------MEDIA QUERY-------------*/
-
+  #info {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2%;
+  }
+  #info section {
+    flex: 0 1 33.33%;
+  }
+  #main-content-resume {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2%;
+  }
+  #main-content-resume {
+    flex: 0 1 33.33%;
+  }
 }
 @media screen and (min-width: 1000px) {/*--------------MEDIA QUERY-------------*/
 
