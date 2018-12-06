@@ -1,0 +1,318 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* stylelint-disable*/
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* stylelint-enable */
+
+/*modular scale is minor third
+https://www.modularscale.com/?16px&1.2*/
+/*FONT SIZES
+p=1em= 16px
+line height= 130% or 1.30208em
+/* Begin site styles below */
+html {
+  background-color: #E1DAC5;
+}
+/*Code for main image*/
+img {
+  display: block;
+  margin-left: 10%;
+  max-width: 100%;
+  padding-top: 10%;
+}
+figure {
+  background-color: white;
+}
+/*Style code for p elements*/
+p {
+  font-size: 1em;
+  line-height: 1.3em;
+  padding-bottom: .65em;
+  padding-left: 1.3em;
+  padding-right: 1.3em;
+  padding-top: .65em;
+}
+/*Style code for h1*/
+h1 {
+  background-color: #625C44;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 4.3em;
+  line-height: 1.30435em;
+  padding: 10%;
+}
+/*Style code for h2 */
+h2 {
+  background-color: #B5AD91;
+  font-size: 2.074em;
+  line-height: 1.29604em; /*33px*1.3= 43px/33.178px=1.29604em */
+  padding: .64802em;
+}
+/*Style code for h3 */
+h3 {
+  background-color: #524827;
+  color: white;
+  font-size: 1.44em;
+  line-height: 1.29604em; /*33px*1.3= 43px/33.178px=1.29604em */
+  padding-left: .64802em;
+  padding-right: .64802em;
+}
+/*Style code resume employers and dates */
+.employer,
+.dates {
+  font-weight: bold;
+  font-size: 1.2em;
+  line-height: 1.30208em; /*19px*1.3= 25px/19.2px=1.30208em */
+  padding-left: .65104em;
+  padding-right: .65104em;
+}
+/*Code for about main pages navigations (about me, my resume, my course catalog)*/
+    /*flex*/
+#main-nav { /*ul element*/
+  display: flex;
+  flex-wrap: row wrap;
+  font-size: 1.2em;
+}
+#navigation li {
+  flex: 1 1 25%;
+}
+#navigation a {
+  background-color: white;
+  border: 1px solid #90876b;
+  border-radius: .5em;
+  color: #90876b;
+  display: block;
+  padding: .65625em 0; /*10.5px/16px=.65625em    .65625em is for top and bottom, 0 is for left and right*/
+  text-align: center;
+  text-decoration: none;
+}
+#home #nav-hom,
+#resume #nav-res,
+#about #nav-abo,
+#courses #nav-cou,
+nav a:hover,
+nav a:active {
+  background: #90876b;
+  color: white;
+}
+/*grid Code for more about me page content*/
+#info {
+  display: grid;
+  grid-template-areas:
+  "hist"
+  "hob"
+  "work-a"
+  "edu-a";
+  grid-template-columns: repeat(1, auto);
+}
+#history {
+  background-color: #E1DAC5;
+  grid-area: hist;
+}
+#edu-about {
+  background-color: #E1DAC5;
+  grid-area: edu-a;
+}
+#work-about {
+  background-color: #E1DAC5;
+  grid-area: work-a;
+}
+#hobbies {
+  background-color: #E1DAC5;
+  grid-area: hob;
+}
+/*flex Code for my resume page nav*/
+#resume-links {
+  background-color: #625C44;
+  font-size: 1.2em
+}
+#resume-nav a {
+  padding: .65625em 0; /*10.5px/16px=.65625em    .65625em is for top and bottom, 0 is for left and right*/
+  border: 1px solid #E1DAC5;
+  border-radius: .25em;
+  color: white;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+.description {
+  background-color: #E1DAC5;
+  line-height: 1.3em;
+  list-style: circle;
+  padding: 10%;
+}
+/*style code for reume page*/
+#personal-info,
+#college-education,
+#college-awards,
+#list-skills {
+  font-size: 1.2em;
+  line-height: 1.3em;
+  padding-left: 5%;
+}
+b {
+  font-weight: bold;
+}
+/*flex code for course navigation*/
+/*grid code for list of courses use with grid only**/
+#course-list {
+  display: grid;
+  grid-template-areas:
+  "commu com-sc"
+  "eco his"
+  "ipro itmd"
+  "maths phils"
+  "phy pol-sc"
+  "psycs socs"
+  "sscia sscia";
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(auto, auto);
+}
+a[href="#com"] {
+  grid-area: commu;
+}
+a[href="#cs"] {
+  grid-area: com-sc;
+}
+a[href="#econ"] {
+  grid-area: eco;
+}
+a[href="#hist"] {
+  grid-area: his;
+}
+a[href="#ipro"] {
+  grid-area: ipro;
+}
+a[href="#itmd"] {
+  grid-area: itmd;
+}
+a[href="#math"] {
+  grid-area: maths;
+}
+a[href="#phil"] {
+  grid-area: phils;
+}
+a[href="#phys"] {
+  grid-area: phy;
+}
+a[href="#ps"] {
+  grid-area: pol-sc;
+}
+a[href="#psyc"] {
+  grid-area: psycs;
+}
+a[href="#soc"] {
+  grid-area: socs;
+}
+a[href="#ssci"] {
+  grid-area: sscia;
+}
+#course-nav a {
+  background-color: #625C44;
+  border: 1px solid #E1DAC5;
+  border-radius: .25em;
+  color: white;
+  display: block;
+  font-size: 1.2em;
+  padding: .65625em .65625em; /*10.5px/16px=.65625em    .65625em is for top and bottom, 0 is for left and right*/
+  text-align: center;
+  text-decoration: none;
+}
+.class-name-link {
+  font-size: 1em;
+  padding: .65625em;
+}
+/*Code for back button*/
+#back {
+  background-color: #E1DAC5;
+  font-size: 1.2em;
+  line-height: 1.3em;
+  padding-right: 5%;
+  text-align: right;
+}
+#back a,
+#list-of-media a {
+  color: #524827;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/*Code for footer*/
+    /*Grid*/
+footer {
+  background-color: #625C44;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.44em;
+  line-height: 1.30201em;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  text-align: center;
+}
+@media screen and (min-width: 400px) {
+  img {
+    margin-left: 14%;
+  }
+}
+@media screen and (min-width: 500px) {
+  img {
+    margin-left: 21%;
+  }
+  html {
+    padding: 3%;
+  }
+  p {
+    padding-left: 2.6em;
+    padding-right: 2.6em;
+  }
+}
+@media screen and (min-width: 700px) {
+  img {
+    margin-left: 30%;
+  }
+  p {
+    font-size: 1.2em;
+    line-height: 1.3em;
+  }
+  .class-name-link {
+    font-size: 1.2em;
+    padding: .65625em;
+}
+  .description {
+    font-size: 1.2em;
+    line-height: 1.3em;
+    padding: 5%;
+  }
+@media screen and (min-width: 1000px) {
+  img {
+    margin-left: 36%; /*1000-291 = 709/1000= 71/2 =36%*/
+  }
+  p {
+    padding-left: 3.9em;
+    padding-right: 3.9em;
+  }
+  #main-nav { /*ul element*/
+    font-size: 1.44em;
+  }
+  h1 {
+    padding: 5%;
+  }
+  footer {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  #back {
+    font-size: 1.44em;
+    line-height: 1.30201em;
+    padding-right: 10%;
+  }
+}
+@media screen and (min-width: 1500px) {
+  img {
+    margin-left: 41%;
+  }
+}
