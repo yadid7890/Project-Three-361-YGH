@@ -54,16 +54,7 @@ a {
   color: white;
 }
 /*Code for main-nav in all pages*/
-#main-nav {/*ul*/
-  display: flex;
-  flex-wrap: row wrap;
-  font-size: 1.2em;
-  background: linear-gradient(142deg, #1f1e1e, #FFcccc 55%, #1f1e1e);
-}
-#navigation li {
-  flex: 1 1 25%;
-}
-#navigation a {/*nav element*/
+#navigation a {
   background-color: #993333; /*blue*/
   border: 1px solid #993333;
   border-radius: 0.5em;
@@ -241,6 +232,17 @@ footer {
 
 
 /*start media queries*/
+@media screen and (min-width: 500px) {/*--------------MEDIA QUERY-------------*/
+  #main-nav {/*ul*/
+    display: flex;
+    flex-wrap: row wrap;
+    font-size: 1.2em;
+    background: linear-gradient(142deg, #1f1e1e, #FFcccc 55%, #1f1e1e);
+  }
+  #navigation li {
+    flex: 1 1 25%;
+  }
+}
 @media screen and (min-width: 600px) {/*--------------MEDIA QUERY-------------*/
 
 }
