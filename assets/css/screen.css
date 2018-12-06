@@ -10,14 +10,19 @@ html {
 }
 /* code for h1 */
 h1 {
-  background-image: url("../img/glitter-gray.jpg");
+  background-image: url("../img/space-wall.jpg");
   background-repeat: repeat-x;
-  color: white;
+  color: blanchedalmond;
   line-height: 1.30201em;
   padding-top: 10%;
   padding-bottom: 5%;
-  font-size: 2em;
+  font-size: 2.25em;
   padding-left: 2%;
+  text-shadow: 2px 2px black;
+}
+/* code for h1 */
+main {
+  background-color: gray;
 }
 /*Code for main-nav in all pages*/
 
@@ -25,9 +30,9 @@ h1 {
 
 /*Code for footer*/
 footer {
-  background-image: url("../img/glitter-gray.jpg");
+  background-image: url("../img/space-wall.jpg");
   background-repeat: repeat-x;
-  color: white;
+  color: blanchedalmond;
   display: flex;
   flex-direction: column;
   line-height: 1.30201em;
