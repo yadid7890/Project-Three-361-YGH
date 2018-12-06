@@ -38,17 +38,16 @@ a {
   color: white;
 }
 /*Code for main-nav in all pages*/
-#navigation {/*ul*/
+#main-nav {/*ul*/
   display: flex;
   flex-wrap: row wrap;
   font-size: 1.2em;
-  background-image: url("../img/red-back.jpg");
-  background-repeat: repeat-x;
+  background: linear-gradient(142deg, #1f1e1e, #FFcccc 55%, #1f1e1e);
 }
-#main-nav li {
+#navigation li {
   flex: 1 1 25%;
 }
-#main-nav a {/*nav element*/
+#navigation a {/*nav element*/
   background-color: #993333; /*blue*/
   border: 1px solid #993333;
   border-radius: 0.5em;
@@ -57,8 +56,8 @@ a {
   text-align: center;
   text-decoration: none;
 }
-#main-nav a:hover {
-  background: #663333;
+#navigation a:hover {
+  background: #FF9999;
 }
 nav a:active,
 #home #nav-hom,
@@ -66,9 +65,9 @@ nav a:active,
 #dogs #nav-dog,
 #courses #nav-cou,
 #about #nav-abo,
-#educ #nav-edu {
-  background: #663333;
-  color: white;
+#education #nav-edu {
+  background: #FF9999;
+  color: black;
 }
 /*Code for gallery images in main page*/
 
@@ -102,14 +101,17 @@ footer {
 #linked-in {
   /*margin-top: 63%;*/
   padding-left: 55%;
+  filter: drop-shadow(3px 3px 2px white);
 }
 #github {
   /*margin-top: 63%;*/
   padding-left: 41%;
+  filter: drop-shadow(3px 3px 2px black);
 }
 #email-icon {
   /*margin-top: 63%;*/
   padding-left: 25%;
+  filter: drop-shadow(3px 3px 2px white);
 }
 
 /*Code for text in about me--maybe grid*/
