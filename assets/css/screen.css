@@ -347,11 +347,28 @@ footer {
     max-width: 80%;
     padding-left: 10%;
   }
-  #course-nav li {
-    flex: 1 1 32%;
+  .slideshow img {
+    padding-left: 0%;
   }
   #resume-nav li {
     flex: 1 1 32%;
+  }
+  #course-nav li {
+    flex: 1 1 34%;
+  }
+  #contact-info {
+    font-weight: bold;
+    margin-top: 20%;
+    text-shadow: 1px 1px #cc9999;
+  }
+  #linked-in {
+    padding-left: 50%;
+  }
+  #github {
+    padding-left: 35%;
+  }
+  #email-icon {
+    padding-left: 15%;
   }
 }
 @media screen and (min-width: 800px) {/*--------------MEDIA QUERY-------------*/
@@ -362,7 +379,7 @@ footer {
     padding: 2%;
   }
   #info section {
-    flex: 0 1 33.33%;
+    flex: 0 1 50%;
   }
 /*grid code for resume*/
   #main-content-resume {
@@ -469,6 +486,7 @@ footer {
   }
   #back {
     margin-top: 3%;
+    padding: 1.4em 1.6em;
   }
 }
 @media screen and (min-width: 1000px) {/*--------------MEDIA QUERY-------------*/
