@@ -33,6 +33,8 @@ img {
 
 /*Code for gallery images in main page*/
 
+/*Code for back button*/
+
 /*Code for footer*/
 footer {
   background-image: url("../img/space-wall.jpg");
@@ -102,4 +104,25 @@ footer {
 }
 .images p {
   text-align: center;
+}
+
+
+/*start media queries*/
+@media screen and (min-width: 600px) {/*--------------MEDIA QUERY-------------*/
+
+}
+@media screen and (min-width: 800px) {/*--------------MEDIA QUERY-------------*/
+
+}
+@media screen and (min-width: 1000px) {/*--------------MEDIA QUERY-------------*/
+
+}
+@media screen and (min-width: 1200px) {/*--------------MEDIA QUERY-------------*/
+
+}
+@media screen and (min-width: 1400px) {/*--------------MEDIA QUERY-------------*/
+
+}
+@media screen and (min-width: 1600px) {/*--------------MEDIA QUERY-------------*/
+
 }
