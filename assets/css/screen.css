@@ -30,7 +30,15 @@ h2 {
   padding-bottom: 2.5%;
   padding-left: 10%;
   font-size: 1.125em;
-  margin-bottom: 2.5%;
+}
+/* code for h3, only in resume*/
+h3 {
+  background-color: #993333;
+  color: black;
+  border-radius: 0.5em;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  padding-left: 10%;
 }
 /* code for main color background */
 body {
@@ -66,7 +74,7 @@ a {
 }
 /*Code for main-nav in all pages*/
 #navigation a {
-  background-color: #993333; /*blue*/
+  background-color: #993333;
   border: 1px solid #993333;
   border-radius: 0.5em;
   display: block;
@@ -174,7 +182,7 @@ footer {
 #resume-nav a:hover {
   background: #663333;
 }
-/*Code for resume sections---mayb flex*/
+/*Code for resume sections---*/
 
 
 /*Code for education nav*/
@@ -253,6 +261,7 @@ footer {
 
 /*start media queries*/
 @media screen and (min-width: 500px) {/*--------------MEDIA QUERY-------------*/
+/*flex code for main navigation*/
   #main-nav {/*ul*/
     display: flex;
     flex-wrap: row wrap;
@@ -267,6 +276,7 @@ footer {
 
 }
 @media screen and (min-width: 800px) {/*--------------MEDIA QUERY-------------*/
+/*flex code for about info*/
   #info {
     display: flex;
     flex-wrap: wrap;
@@ -275,14 +285,37 @@ footer {
   #info section {
     flex: 0 1 33.33%;
   }
+  /*grid code for resume*/
   #main-content-resume {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 2%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas:
+      "about-grid about-grid"
+      "educa-grid recog-grid"
+      "skill-grid skill-grid"
+      "worke-grid worke-grid"
+      "commu-grid commu-grid";
   }
-  #main-content-resume {
-    flex: 0 1 33.33%;
+  #about-me {
+    grid-area: about-grid;
   }
+  #education {
+    grid-area: educa-grid;
+  }
+  #recognitions {
+    grid-area: recog-grid;
+  }
+  #skills {
+    grid-area: skill-grid;
+  }
+  #work-experience {
+    grid-area: worke-grid;
+  }
+  #community {
+    grid-area: commu-grid;
+  }
+  /*grid code for courses info*/
+
 }
 @media screen and (min-width: 1000px) {/*--------------MEDIA QUERY-------------*/
 
