@@ -24,6 +24,11 @@ h1 {
 main {
   background-color: gray;
 }
+/* code for images */
+img {
+  display: block;
+  max-width: 100%;
+}
 /*Code for main-nav in all pages*/
 
 /*Code for gallery images in main page*/
@@ -76,3 +81,25 @@ footer {
 /*Code for courses content*/
 
 /*Code for dogs slideshow*/
+.gallery .images {
+  background: lightsteelblue;
+  display: flex;
+  flex-flow: row wrap-reverse;
+}
+.gallery .images li {
+  flex: 1 1 auto;
+}
+.slideshow img {
+  display: block;
+  max-width: 100%;
+}
+/* State Styles */
+.slideshow li {
+  display: none;
+}
+.slideshow li.is-showing {
+  display: block;
+}
+.images p {
+  text-align: center;
+}
