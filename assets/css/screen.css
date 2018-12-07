@@ -148,13 +148,12 @@ footer {
 /*Code for text in about me*/
 #history p,
 #hobbies p {
-  color: ghostwhite;
+  color: black;
   line-height: 1.3em;
   padding-top: 5%;
   padding-right: 10%;
   padding-bottom: 5%;
   padding-left: 10%;
-  text-shadow: 0.5px 0.5px black;
 }
 /*Code for resume nav*/
 #resume-list {/*ul*/
@@ -524,7 +523,7 @@ footer {
   h3 {
     font-size: 1.333em;
   }
-  #main-nav {
+  #main-nav a {
     font-size: 1.777em;
   }
   #back {
@@ -565,13 +564,33 @@ footer {
     margin-right: 25%;
   }
   #main-nav a {/*nav element*/
-    padding: 1em 0.4em;
+    padding: .5em 0.4em;
+    font-size: 1.333em;
   }
   #back {
-    padding: 1.2em 1.6em;
+    padding: 0.5em 1.6em;
+  }
+  footer {
+    padding-top: 0%;
   }
   #contact-info {
-    margin-top: 13%;
+    margin-top: 10%;
+  }
+  #linked-in {
+    padding-left: 28%;
+  }
+  #github {
+    padding-left: 18%;
+  }
+  #email-icon {
+    padding-left: 8%;
+  }
+  h2 {
+    text-align: center;
+  }
+  #about h2 {
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
 @media screen and (min-width: 1600px) {/*--------------MEDIA QUERY-------------*/
