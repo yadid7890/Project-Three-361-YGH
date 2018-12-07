@@ -282,8 +282,6 @@ footer {
 #course-nav a:hover {
   background: #663333;
 }
-/*Code for courses content*/
-
 /*Code for dogs slideshow*/
 .gallery .images {
   background: linear-gradient(142deg, #1f1e1e, #FFcccc 55%, #1f1e1e);
@@ -297,7 +295,6 @@ footer {
   display: block;
   max-width: 100%;
 }
-/* State Styles */
 .slideshow li {
   display: none;
 }
@@ -314,7 +311,7 @@ footer {
 }
 /*start media queries*/
 @media screen and (min-width: 500px) {/*--------------MEDIA QUERY-------------*/
-/*flex code for main navigation*/
+  /*flex code for main navigation*/
   #main-nav {/*ul*/
     display: flex;
     flex-wrap: row wrap;
@@ -326,13 +323,15 @@ footer {
   }
 }
 @media screen and (min-width: 600px) {/*--------------MEDIA QUERY-------------*/
-/*flex code for course navs*/
+  /* code for main */
   main {
   padding: 5%;
   }
+  /* code for back button */
   #back {
     margin-top: 5%;
   }
+  /* code for images */
   img {
     max-width: 80%;
     padding-left: 10%;
@@ -341,12 +340,14 @@ footer {
     max-width: 80%;
     padding-left: 10%;
   }
+  /* code for navigation bars */
   #resume-nav li {
     flex: 1 1 32%;
   }
   #course-nav li {
     flex: 1 1 34%;
   }
+  /* code for footer */
   #contact-info {
     font-weight: bold;
     margin-top: 20%;
@@ -362,7 +363,7 @@ footer {
   }
 }
 @media screen and (min-width: 800px) {/*--------------MEDIA QUERY-------------*/
-/*flex code for about info*/
+  /*flex code for about info*/
   #info {
     display: flex;
     flex-wrap: wrap;
@@ -371,7 +372,7 @@ footer {
   #info section {
     flex: 0 1 50%;
   }
-/*grid code for resume*/
+  /*grid code for resume*/
   #main-content-resume {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -448,12 +449,14 @@ footer {
   #ssci {
     grid-area: ssci-box;
   }
+  /* code for main */
   main {
     padding-top: 3%;
     padding-bottom: 3%;
     padding-right: 10%;
     padding-left: 10%;
   }
+  /* code for images */
   img {
     max-width: 60%;
     padding-left: 20%;
@@ -462,6 +465,7 @@ footer {
     max-width: 60%;
     padding-left: 20%;
   }
+  /* code for footer items */
   footer {
     padding-top: 2%;
   }
@@ -477,16 +481,34 @@ footer {
   #contact-info {
     margin-top: 15%;
   }
+  /* code for back button */
   #back {
     margin-top: 3%;
     padding: 1.4em 1.6em;
   }
 }
 @media screen and (min-width: 1000px) {/*--------------MEDIA QUERY-------------*/
-/*flex code for course navs*/
+  /*flex code for navigation menus*/
+  #main-nav a {
+    font-size: 1.777em;
+  }
   #course-nav li {
     flex: 1 1 23%;
   }
+  #course-nav a {
+    font-size: 1.333em;
+  }
+  #resume-nav li {
+    flex: 1 1 23%;
+  }
+  #resume-nav a {
+    font-size: 1.333em;
+  }
+  #edu-nav a {
+    font-size: 1.333em;
+    padding: 1.656em 0;
+  }
+  /*code for image captions and figcaptions*/
   figcaption {
     font-size: 1.125em;
     margin-left: 15%;
@@ -497,9 +519,7 @@ footer {
     margin-left: 15%;
     margin-right: 15%;
   }
-  #resume-nav li {
-    flex: 1 1 23%;
-  }
+  /*grid code for course content*/
   #courses-box {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -511,6 +531,11 @@ footer {
         "ps-box psyc-box"
         "soc-box ssci-box";
   }
+  .class-name-link {
+    font-size: 1.125em;
+    line-height: 1.5em;
+  }
+  /*style code for headings and p elements*/
   h1 {
     font-size: 4.209em;
   }
@@ -520,38 +545,28 @@ footer {
   h3 {
     font-size: 1.333em;
   }
-  #main-nav a {
-    font-size: 1.777em;
-  }
-  #back {
-    font-size: 1.333em;
-  }
-  #contact-info {
-    font-size: 1.777em;
-  }
   p {
     font-size: 1.125em;
   }
-  #course-nav a {
+  /*code for back button*/
+  #back {
     font-size: 1.333em;
   }
-  #resume-nav a {
-    font-size: 1.333em;
-  }
-  #edu-nav a {
-    font-size: 1.333em;
-    padding: 1.656em 0;
-  }
-  .class-name-link {
-    font-size: 1.125em;
-    line-height: 1.5em;
+  /*code for footer content*/
+  #contact-info {
+    font-size: 1.777em;
   }
 }
 @media screen and (min-width: 1400px) {/*--------------MEDIA QUERY-------------*/
+  /*code for images*/
   img {
     max-width: 40%;
     padding-left: 30%;
   }
+  .slideshow img {
+    padding-left: 20%;
+  }
+  /*code for image captions and figcaptions*/
   figcaption {
     margin-left: 25%;
     margin-right: 25%;
@@ -560,9 +575,7 @@ footer {
     margin-left: 20%;
     margin-right: 20%;
   }
-  .slideshow img {
-    padding-left: 20%;
-  }
+  /*code for navigation bars*/
   #main-nav a {/*nav element*/
     padding: 0.5em 0.4em;
     font-size: 1.333em;
@@ -570,9 +583,14 @@ footer {
   #edu-nav a {
     padding: 0.656em 0;
   }
+  #course-nav li {
+    padding: 0.05%;
+  }
+  /*code for back button*/
   #back {
     padding: 0.5em 1.6em;
   }
+  /*code for footer elements*/
   footer {
     padding-top: 0%;
   }
@@ -588,6 +606,7 @@ footer {
   #email-icon {
     padding-left: 8%;
   }
+  /*style code for headings and p elements*/
   #about h2 {
     margin-left: 10%;
     margin-right: 10%;
@@ -607,9 +626,6 @@ footer {
   .dates {
     padding-left: 5%;
   }
-  #course-nav li {
-    padding: 0.05%;
-  }
   #courses h2 {
     font-size: 1.3em;
     margin-right: 10%;
@@ -627,6 +643,7 @@ footer {
   }
 }
 @media screen and (min-width: 1600px) {/*--------------MEDIA QUERY-------------*/
+  /*grid code for courses*/
   #courses-box {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
@@ -635,24 +652,29 @@ footer {
         "math-box phil-box ps-box"
         "psyc-box soc-box ssci-box";
   }
+  /*style code for p elements*/
   #photo-space-box p,
   #edu-box p {
     margin-left: 15%;
     margin-right: 15%;
   }
+  /*style code images*/
   .slideshow img {
     max-width: 80%;
     padding-left: 12%;
   }
+  /*style code image captions*/
   .images p {
     margin-left: 12%;
     margin-right: 12%;
   }
 }
 @media screen and (min-width: 1800px) {/*--------------MEDIA QUERY-------------*/
+  /*style code images*/
   .slideshow img {
     padding-left: 16%;
   }
+  /*style code image captions*/
   .images p {
     margin-left: 16%;
     margin-right: 16%;
