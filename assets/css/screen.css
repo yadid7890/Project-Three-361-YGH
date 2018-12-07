@@ -13,32 +13,33 @@ h1 {
   background-image: url("../img/space-wall.jpg");
   background-repeat: repeat-x;
   color: blanchedalmond;
+  font-size: 3.157em;
   line-height: 1.30201em;
   padding-top: 10%;
   padding-bottom: 5%;
-  font-size: 3.157em;
   padding-left: 2%;
   text-shadow: 2px 2px black;
 }
 /* code for h2*/
 h2 {
   background-color: #663333;
-  color: blanchedalmond;
-  line-height: 1.333em;
   border-radius: 0.5em;
+  color: blanchedalmond;
+  font-size: 1.125em;
+  line-height: 1.333em;
   padding-top: 2.5%;
   padding-bottom: 2.5%;
   padding-left: 10%;
-  font-size: 1.125em;
+  padding-top: 2.5%;
 }
 /* code for h3, only in resume*/
 h3 {
   background-color: #993333;
   color: ghostwhite;
   border-radius: 0.5em;
-  padding-top: 1.5%;
   padding-bottom: 1.5%;
   padding-left: 10%;
+  padding-top: 1.5%;
 }
 /* code for main color background */
 body {
@@ -52,18 +53,18 @@ img {
 /* code for figcaptions and most text*/
 .images p {
   background-color: #993333;
+  border-radius: 0.5em;
   color: ghostwhite;
   line-height: 1.333em;
-  border-radius: 0.5em;
   padding: 1%;
   text-align: center;
 }
 #photo-space-box p,
 #edu-box p {
   background-color: #FF9999;
+  border-radius: 0.5em;
   color: black;
   line-height: 1.333em;
-  border-radius: 0.5em;
   padding: 1%;
 }
 #photo-space-box p {
@@ -71,8 +72,8 @@ img {
 }
 /* code for links */
 a {
-  text-decoration: none;
   color: white;
+  text-decoration: none
 }
 /*Code for main-nav in all pages*/
 #navigation a {
@@ -94,8 +95,8 @@ nav a:active,
 #courses #nav-edu,
 #about #nav-abo,
 #education #nav-edu {
-  background: #FF9999;
   color: black;
+  background: #FF9999;
 }
 /*Code for back button*/
 #back {
@@ -104,8 +105,8 @@ nav a:active,
   border-radius: 0.5em;
   font-size: 1em;
   margin-left: 70%;
-  position: absolute;
   padding: 0.4em 0.6em;
+  position: absolute;
   text-shadow: 1px 1px black;
 }
 /*Code for footer*/
@@ -116,51 +117,52 @@ footer {
   display: flex;
   flex-direction: column;
   line-height: 1.30201em;
-  padding-top: 5%;
   padding-bottom: 5%;
+  padding-top: 5%;
 }
 #social-media img {
-  width: 60px;
-  height: 60px;
   display: block;
+  height: 60px;
   margin-top: 5%;
   position: absolute;
+  width: 60px;
 }
 #contact-info {
-  font-size: 1.3em;
+  background-color: rgba(102, 51, 51, 0.8);
   color: #cc9999;
+  font-size: 1.3em;
   line-height: 1.3em;
   margin-top: 25%;
   text-align: center;
-  background-color: rgba(102, 51, 51, 0.8);
 }
 #linked-in {
-  padding-left: 65%;
   filter: drop-shadow(3px 3px 2px white);
+  padding-left: 65%;
 }
 #github {
-  padding-left: 43%;
   filter: drop-shadow(3px 3px 2px black);
+  padding-left: 43%;
 }
 #email-icon {
-  padding-left: 20%;
   filter: drop-shadow(3px 3px 2px white);
+  padding-left: 20%;
 }
 /*Code for text in about me*/
 #history p,
 #hobbies p {
   color: black;
   line-height: 1.3em;
-  padding-top: 5%;
-  padding-right: 10%;
   padding-bottom: 5%;
   padding-left: 10%;
+  padding-top: 5%;
+  padding-right: 10%;
+
 }
 /*Code for resume nav*/
 #resume-list {/*ul*/
+  background: linear-gradient(142deg, #1f1e1e, #FFcccc 55%, #1f1e1e);
   display: flex;
   flex-wrap: wrap;
-  background: linear-gradient(142deg, #1f1e1e, #FFcccc 55%, #1f1e1e);
 }
 #resume-nav li {
   flex: 1 1 34%;
@@ -169,11 +171,11 @@ footer {
   background-color: #cc9999;
   border: 1px solid #993333;
   border-radius: 0.5em;
+  color: #993333;
   display: block;
   padding: 0.65625em 0;
   text-align: center;
   text-decoration: none;
-  color: #993333;
 }
 #resume-nav a:hover {
   background: #663333;
@@ -192,8 +194,8 @@ footer {
   color: ghostwhite;
   line-height: 1.3em;
   margin-bottom: 2%;
-  padding-right: 10%;
   padding-left: 10%;
+  padding-right: 10%;
   text-shadow: 0.5px 0.5px black;
 }
 #list-skills {
@@ -201,8 +203,8 @@ footer {
   line-height: 1.3em;
   list-style: circle;
   margin-bottom: 2%;
-  padding-top: 2%;
   padding-left: 10%;
+  padding-top: 2%;
   padding-right: 3.5%;
   text-shadow: 1px 1px black;
 }
@@ -214,19 +216,19 @@ footer {
   color: black;
   line-height: 1.3em;
   list-style: circle;
-  padding-top: 2%;
   padding-left: 15%;
+  padding-top: 2%;
   padding-right: 5%;
 }
 #personal-info {
   background-color: #663333;
-  color: blanchedalmond;
-  line-height: 1.333em;
   border-radius: 0.5em;
+  color: blanchedalmond;
+  font-size: 1.125em;
+  line-height: 1.333em;
+  padding-left: 10%;
   padding-top: 2.5%;
   padding-bottom: 2.5%;
-  padding-left: 10%;
-  font-size: 1.125em;
 }
 /*Code for education nav*/
 #edu-navigation {/*ul*/
@@ -253,17 +255,17 @@ footer {
 #photo-space-box figcaption,
 #iit-photo figcaption {
   background-color: #993333;
+  border-radius: 0.5em;
   color: ghostwhite;
   line-height: 1.333em;
-  border-radius: 0.5em;
   padding: 1%;
   text-align: center;
 }
 /*Code for courses nav*/
 #course-list {/*ul*/
+  background: linear-gradient(142deg, #1f1e1e, #FFcccc 55%, #1f1e1e);
   display: flex;
   flex-wrap: wrap;
-  background: linear-gradient(142deg, #1f1e1e, #FFcccc 55%, #1f1e1e);
 }
 #course-nav li {
   flex: 1 1 34%;
@@ -273,11 +275,11 @@ footer {
   background-color: #cc9999;
   border: 1px solid #993333;
   border-radius: 0.5em;
+  color: #993333;
   display: block;
   padding: 0.65625em 0;
   text-align: center;
   text-decoration: none;
-  color: #993333;
 }
 #course-nav a:hover {
   background: #663333;
@@ -303,9 +305,9 @@ footer {
 }
 #dog-figcaption {
   background-color: #FF9999;
+  border-radius: 0.5em;
   color: black;
   line-height: 1.333em;
-  border-radius: 0.5em;
   padding: 1%;
   text-align: center;
 }
@@ -313,10 +315,10 @@ footer {
 @media screen and (min-width: 500px) {/*--------------MEDIA QUERY-------------*/
   /*flex code for main navigation*/
   #main-nav {/*ul*/
+    background: linear-gradient(142deg, #1f1e1e, #FFcccc 55%, #1f1e1e);
     display: flex;
     flex-wrap: row wrap;
     font-size: 1.2em;
-    background: linear-gradient(142deg, #1f1e1e, #FFcccc 55%, #1f1e1e);
   }
   #navigation li {
     flex: 1 1 25%;
@@ -325,7 +327,7 @@ footer {
 @media screen and (min-width: 600px) {/*--------------MEDIA QUERY-------------*/
   /* code for main */
   main {
-  padding: 5%;
+    padding: 5%;
   }
   /* code for back button */
   #back {
@@ -414,7 +416,7 @@ footer {
     "soc-box ssci-box";
   }
   #com {
-  grid-area: com-box;
+    grid-area: com-box;
   }
   #cs {
     grid-area: cs-box;
@@ -451,10 +453,10 @@ footer {
   }
   /* code for main */
   main {
-    padding-top: 3%;
-    padding-bottom: 3%;
-    padding-right: 10%;
     padding-left: 10%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    padding-right: 10%;
   }
   /* code for images */
   img {
@@ -577,8 +579,8 @@ footer {
   }
   /*code for navigation bars*/
   #main-nav a {/*nav element*/
-    padding: 0.5em 0.4em;
     font-size: 1.333em;
+    padding: 0.5em 0.4em;
   }
   #edu-nav a {
     padding: 0.656em 0;
@@ -618,9 +620,9 @@ footer {
     padding-left: 15%;
   }
   .description {
+    line-height: 1.5em;
     padding-right: 15%;
     padding-top: 1%;
-    line-height: 1.5em;
   }
   .employer,
   .dates {
@@ -637,9 +639,9 @@ footer {
     font-size: 1em;
   }
   .class-list {
+    padding-bottom: 2%;
     padding-left: 10%;
     padding-top: 2%;
-    padding-bottom: 2%;
   }
 }
 @media screen and (min-width: 1600px) {/*--------------MEDIA QUERY-------------*/
