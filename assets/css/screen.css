@@ -505,19 +505,55 @@ footer {
     flex: 1 1 23%;
   }
   #courses-box {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas:
-    "com-box cs-box"
-    "econ-box hist-box"
-    "ipro-box itmd-box"
-    "math-box phil-box"
-    "ps-box psyc-box"
-    "soc-box ssci-box";
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "com-box cs-box"
+      "econ-box hist-box"
+      "ipro-box itmd-box"
+      "math-box phil-box"
+      "ps-box psyc-box"
+      "soc-box ssci-box";
   }
-}
-@media screen and (min-width: 1200px) {/*--------------MEDIA QUERY-------------*/
-
+  h1 {
+    font-size: 4.209em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1.333em;
+  }
+  #main-nav {
+    font-size: 1.777em;
+  }
+  #back {
+    font-size: 1.333em;
+  }
+  #contact-info {
+    font-size: 1.777em;
+  }
+  p,
+  #resume li {
+    font-size: 1.125em;
+  }
+  figcaption {
+    font-size: 1.125em;
+  }
+  #course-nav a {
+    font-size: 1.333em;
+  }
+  #resume-nav a {
+    font-size: 1.333em;
+  }
+  #edu-nav a {
+    font-size: 1.333em;
+    padding: 1.656em 0;
+  }
+  .class-name-link {
+    font-size: 1.125em;
+    line-height: 1.5em;
+  }
 }
 @media screen and (min-width: 1400px) {/*--------------MEDIA QUERY-------------*/
   img {
@@ -529,22 +565,13 @@ footer {
     margin-right: 25%;
   }
   #main-nav a {/*nav element*/
-    padding: 1.5em 0.4em;; /*10.5px/16px=.65625em    .65625em is for top and bottom, 0 is for left and right*/
+    padding: 1em 0.4em;
   }
   #back {
     padding: 1.2em 1.6em;
   }
-  #linked-in {
-    padding-left: 27%;
-  }
-  #github {
-    padding-left: 19%;
-  }
-  #email-icon {
-    padding-left: 10%;
-  }
   #contact-info {
-    margin-top: 10%;
+    margin-top: 13%;
   }
 }
 @media screen and (min-width: 1600px) {/*--------------MEDIA QUERY-------------*/
