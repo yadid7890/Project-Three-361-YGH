@@ -18,7 +18,6 @@ h1 {
   padding-top: 10%;
   padding-bottom: 5%;
   padding-left: 2%;
-  text-shadow: 2px 2px black;
 }
 /* code for h2*/
 h2 {
@@ -78,7 +77,7 @@ a {
 /*Code for main-nav in all pages*/
 #navigation a {
   background-color: #993333;
-  border: 1px solid #993333;
+  border: 0.10em solid #993333;
   border-radius: 0.5em;
   display: block;
   padding: 0.65625em 0;
@@ -101,13 +100,12 @@ nav a:active,
 /*Code for back button*/
 #back {
   background-color: #663333; /* BACKGROUND COLOR CODE */
-  border: 2px solid #FF9999;
+  border: 0.20em solid #FF9999;
   border-radius: 0.5em;
   font-size: 1em;
   margin-left: 70%;
   padding: 0.4em 0.6em;
   position: absolute;
-  text-shadow: 1px 1px black;
 }
 /*Code for footer*/
 footer {
@@ -169,7 +167,7 @@ footer {
 }
 #resume-nav a {/*nav element*/
   background-color: #cc9999;
-  border: 1px solid #993333;
+  border: 0.10em solid #993333;
   border-radius: 0.5em;
   color: #993333;
   display: block;
@@ -196,7 +194,6 @@ footer {
   margin-bottom: 2%;
   padding-left: 10%;
   padding-right: 10%;
-  text-shadow: 0.5px 0.5px black;
 }
 #list-skills {
   color: ghostwhite;
@@ -206,7 +203,6 @@ footer {
   padding-left: 10%;
   padding-top: 2%;
   padding-right: 3.5%;
-  text-shadow: 1px 1px black;
 }
 .employer,
 .dates {
@@ -240,7 +236,7 @@ footer {
 }
 #edu-nav a {/*nav element*/
   background-color: #993333;
-  border: 3px solid #cc6699;
+  border: 0.20em solid #cc6699;
   border-radius: 0.5em;
   display: block;
   padding: 2.65625em 0;
@@ -273,7 +269,7 @@ footer {
 }
 #course-nav a {/*nav element*/
   background-color: #cc9999;
-  border: 1px solid #993333;
+  border: 0.10em solid #993333;
   border-radius: 0.5em;
   color: #993333;
   display: block;
