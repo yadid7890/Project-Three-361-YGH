@@ -6,7 +6,7 @@
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 /* stylelint-enable */
 html {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 /* code for h1 */
 h1 {
@@ -267,7 +267,7 @@ footer {
 }
 #course-nav li {
   flex: 1 1 34%;
-  padding: .25%;
+  padding: 0.25%;
 }
 #course-nav a {/*nav element*/
   background-color: #cc9999;
@@ -304,9 +304,6 @@ footer {
 .slideshow li.is-showing {
   display: block;
 }
-.images p {
-  text-align: center;
-}
 #dog-figcaption {
   background-color: #FF9999;
   color: black;
@@ -330,9 +327,6 @@ footer {
 }
 @media screen and (min-width: 600px) {/*--------------MEDIA QUERY-------------*/
 /*flex code for course navs*/
-  #course-nav li {
-    flex: 1 1 32%;
-  }
   main {
   padding: 5%;
   }
@@ -382,11 +376,11 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-areas:
-      "about-grid about-grid"
-      "educa-grid recog-grid"
-      "skill-grid skill-grid"
-      "worke-grid worke-grid"
-      "commu-grid commu-grid";
+        "about-grid about-grid"
+        "educa-grid recog-grid"
+        "skill-grid skill-grid"
+        "worke-grid worke-grid"
+        "commu-grid commu-grid";
   }
   #about-me {
     grid-area: about-grid;
@@ -494,15 +488,14 @@ footer {
     flex: 1 1 23%;
   }
   figcaption {
+    font-size: 1.125em;
     margin-left: 15%;
     margin-right: 15%;
   }
   .images p {
+    font-size: 1.125em;
     margin-left: 15%;
     margin-right: 15%;
-  }
-  #course-nav li {
-    flex: 1 1 23%;
   }
   #resume-nav li {
     flex: 1 1 23%;
@@ -511,12 +504,12 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
-      "com-box cs-box"
-      "econ-box hist-box"
-      "ipro-box itmd-box"
-      "math-box phil-box"
-      "ps-box psyc-box"
-      "soc-box ssci-box";
+        "com-box cs-box"
+        "econ-box hist-box"
+        "ipro-box itmd-box"
+        "math-box phil-box"
+        "ps-box psyc-box"
+        "soc-box ssci-box";
   }
   h1 {
     font-size: 4.209em;
@@ -537,12 +530,6 @@ footer {
     font-size: 1.777em;
   }
   p {
-    font-size: 1.125em;
-  }
-  figcaption {
-    font-size: 1.125em;
-  }
-  .images p {
     font-size: 1.125em;
   }
   #course-nav a {
@@ -577,7 +564,7 @@ footer {
     padding-left: 20%;
   }
   #main-nav a {/*nav element*/
-    padding: .5em 0.4em;
+    padding: 0.5em 0.4em;
     font-size: 1.333em;
   }
   #edu-nav a {
@@ -621,7 +608,7 @@ footer {
     padding-left: 5%;
   }
   #course-nav li {
-    padding: .05%;
+    padding: 0.05%;
   }
   #courses h2 {
     font-size: 1.3em;
@@ -641,12 +628,12 @@ footer {
 }
 @media screen and (min-width: 1600px) {/*--------------MEDIA QUERY-------------*/
   #courses-box {
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas:
-    "com-box cs-box econ-box"
-    "hist-box ipro-box itmd-box"
-    "math-box phil-box ps-box"
-    "psyc-box soc-box ssci-box";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "com-box cs-box econ-box"
+        "hist-box ipro-box itmd-box"
+        "math-box phil-box ps-box"
+        "psyc-box soc-box ssci-box";
   }
   #photo-space-box p,
   #edu-box p {
