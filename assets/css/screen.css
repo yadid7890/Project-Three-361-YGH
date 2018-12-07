@@ -36,8 +36,8 @@ h3 {
   background-color: #993333;
   color: ghostwhite;
   border-radius: 0.5em;
-  padding-top: 2.5%;
-  padding-bottom: 2.5%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
   padding-left: 10%;
 }
 /* code for main color background */
@@ -80,7 +80,7 @@ a {
   border: 1px solid #993333;
   border-radius: 0.5em;
   display: block;
-  padding: 0.65625em 0; 
+  padding: 0.65625em 0;
   text-align: center;
   text-decoration: none;
 }
@@ -344,7 +344,8 @@ footer {
     padding-left: 10%;
   }
   .slideshow img {
-    padding-left: 0%;
+    max-width: 80%;
+    padding-left: 10%;
   }
   #resume-nav li {
     flex: 1 1 32%;
@@ -463,6 +464,10 @@ footer {
     max-width: 60%;
     padding-left: 20%;
   }
+  .slideshow img {
+    max-width: 60%;
+    padding-left: 20%;
+  }
   footer {
     padding-top: 2%;
   }
@@ -489,6 +494,10 @@ footer {
     flex: 1 1 23%;
   }
   figcaption {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .images p {
     margin-left: 15%;
     margin-right: 15%;
   }
@@ -527,11 +536,13 @@ footer {
   #contact-info {
     font-size: 1.777em;
   }
-  p,
-  #resume li {
+  p {
     font-size: 1.125em;
   }
   figcaption {
+    font-size: 1.125em;
+  }
+  .images p {
     font-size: 1.125em;
   }
   #course-nav a {
@@ -558,8 +569,12 @@ footer {
     margin-left: 25%;
     margin-right: 25%;
   }
+  .images p {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
   .slideshow img {
-    padding-left: 6%;
+    padding-left: 20%;
   }
   #main-nav a {/*nav element*/
     padding: .5em 0.4em;
@@ -587,9 +602,14 @@ footer {
     padding-left: 8%;
   }
   #about h2 {
-    text-align: center;
     margin-left: 10%;
     margin-right: 10%;
+  }
+  #history p,
+  #hobbies p {
+    line-height: 1.5em;
+    padding-right: 15%;
+    padding-left: 15%;
   }
   .description {
     padding-right: 15%;
@@ -600,6 +620,24 @@ footer {
   .dates {
     padding-left: 5%;
   }
+  #course-nav li {
+    padding: .05%;
+  }
+  #courses h2 {
+    font-size: 1.3em;
+    margin-right: 10%;
+  }
+  #course-list a {
+    font-size: 1.125em;
+  }
+  .class-name-link {
+    font-size: 1em;
+  }
+  .class-list {
+    padding-left: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
 }
 @media screen and (min-width: 1600px) {/*--------------MEDIA QUERY-------------*/
   #courses-box {
@@ -609,5 +647,27 @@ footer {
     "hist-box ipro-box itmd-box"
     "math-box phil-box ps-box"
     "psyc-box soc-box ssci-box";
+  }
+  #photo-space-box p,
+  #edu-box p {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .slideshow img {
+    max-width: 80%;
+    padding-left: 12%;
+  }
+  .images p {
+    margin-left: 12%;
+    margin-right: 12%;
+  }
+}
+@media screen and (min-width: 1800px) {/*--------------MEDIA QUERY-------------*/
+  .slideshow img {
+    padding-left: 16%;
+  }
+  .images p {
+    margin-left: 16%;
+    margin-right: 16%;
   }
 }
